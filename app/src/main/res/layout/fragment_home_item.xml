@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pictures" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/Image"
+        android:layout_toRightOf="@+id/Image"
+        android:maxLines="1"
+        android:text="Zhao Xiaoyan"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactName"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_alignLeft="@+id/contactName"
+        android:maxLines="1"
+        android:text="1234567788"
+        android:textSize="14sp" />
+    </RelativeLayout>
